@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6054610396128393261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6054610396128393263}
+  - component: {fileID: 6054610396128393262}
+  m_Layer: 0
+  m_Name: SeagullSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6054610396128393263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054610396128393261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.34, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6054610396128393262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054610396128393261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14676e1875fa1884a8eaf0c4246a2b18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SeagullPattern:
+  - {fileID: 3241329968746112601, guid: 719e183118b43c24a87e38cf5db86318, type: 3}
+  - {fileID: 3556201197676588237, guid: d1c4b5f10f7a9094bb0f519b52f9c812, type: 3}
+  - {fileID: 6118934660881735512, guid: 6e5c5caa29daae74b945791c68421eae, type: 3}
+  - {fileID: 5777120596107527551, guid: f0fae741244fe64419832eb719657092, type: 3}
+  - {fileID: 545055351984492793, guid: d7f2589b3cf705a49b29599f6662ba5d, type: 3}
+  - {fileID: 1015261535374781519, guid: eee64307ce65e90449f06e02f74b3de4, type: 3}
+  startTimeBtwSpawn: 4.5
+  decreaceTime: 0.05
+  minTime: 0.65
