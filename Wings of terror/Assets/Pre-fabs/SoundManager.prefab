@@ -48,13 +48,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 59dc19c7823442845abbed6b9524f46a, type: 3}
     volume: 0.837
     pitch: 0
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Sress
     clip: {fileID: 8300000, guid: 0654e430b422dff4e95931a91a9c26e3, type: 3}
     volume: 1
     pitch: 0
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: 1d3b2efcbdce6bb479070e4a28be4b58, type: 3}
