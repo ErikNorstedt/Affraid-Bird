@@ -11,7 +11,7 @@ public class LinearTimer : MonoBehaviour
     public Rigidbody2D rb;
     public float heightOfActivation;
     public GameObject player;
-
+    
   
     void Start()
     {
