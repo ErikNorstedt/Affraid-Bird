@@ -14,8 +14,8 @@ public class Spawnsegulls : MonoBehaviour
     public float decreaceTime;
     public float minTime = 0.65f;
 
+    
 
-  
     // Update is called once per frame
     void Update()
     {
@@ -23,6 +23,7 @@ public class Spawnsegulls : MonoBehaviour
         {
             rand = Random.Range(0, SeagullPattern.Length);
             Instantiate(SeagullPattern[rand], transform.position, Quaternion.identity);
+            
             timeBtwSpawn = startTimeBtwSpawn;
             if(startTimeBtwSpawn > minTime)
             {
