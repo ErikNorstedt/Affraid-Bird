@@ -44,8 +44,10 @@ public class PlayerMovement : MonoBehaviour
                 // feathers
                 Instantiate(effect, transform.position, Quaternion.identity);
                 anim.SetTrigger("Flap");
+                AudioManager.instance.PlaySound("Flap2");
 
-               
+
+
             }
             if (Input.GetKey(KeyCode.A) && transform.position.x > maxLeft)
             {
