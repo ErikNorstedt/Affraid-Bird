@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     public Collider2D CC;
     public bool lockvar;
     private float locking;
+    public Animator anim;
+    public GameObject effect;
 
     public void start()
     {
@@ -39,6 +41,11 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 RB.AddForce(Vector3.up * jumpSpeed, ForceMode2D.Impulse);
+                // feathers
+                Instantiate(effect, transform.position, Quaternion.identity);
+                anim.SetTrigger("Flap");
+
+               
             }
             if (Input.GetKey(KeyCode.A) && transform.position.x > maxLeft)
             {
