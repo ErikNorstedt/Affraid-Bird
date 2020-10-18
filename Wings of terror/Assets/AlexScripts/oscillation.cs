@@ -4,7 +4,7 @@ using System.Collections;
 public class oscillation : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public int minHeight = 0;
+    public float minHeight = 0;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
