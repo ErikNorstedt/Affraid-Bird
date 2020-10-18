@@ -20,7 +20,6 @@ public class SoundManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
-
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -33,19 +32,17 @@ public class SoundManager : MonoBehaviour
     }
      void Start()
     {
-        Play("A");
+        Play("Theme");
     }
     // Update is called once per frame
-     public void Play(string name)
+    public void Play (string name)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
+        Sound s = Array.Find(sounds, Sound => Sound.name == name);
+        s.source.Play();
 
         if (s == null)
         {
-            return;
+            Debug.LogWarning("Sounds; " + name + "not found!");
         }
-        s.source.Play();
-
-       
     }
 }
