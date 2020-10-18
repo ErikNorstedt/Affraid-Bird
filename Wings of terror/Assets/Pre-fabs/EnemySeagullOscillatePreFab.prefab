@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3694859686285591022}
   - component: {fileID: 3694859686285591023}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: OscillateingSeagull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
