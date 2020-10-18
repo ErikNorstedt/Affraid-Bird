@@ -263,8 +263,12 @@ MonoBehaviour:
   jumpSpeed: 4
   maxLeft: -8
   maxRight: 5.5
+  Linearref: {fileID: 2060381107}
   RB: {fileID: 184107241}
   CC: {fileID: 184107240}
+  lockvar: 0
+  anim: {fileID: 184107243}
+  effect: {fileID: 8601447519368590810, guid: cb7cc84bfe94feb41a61ce91bd79f2aa, type: 3}
 --- !u!95 &184107243
 Animator:
   serializedVersion: 3
@@ -342,7 +346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184107239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5669165, y: 2.2890472, z: 0}
+  m_LocalPosition: {x: -4.44, y: 0.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 298486975}
@@ -736,7 +740,12 @@ PrefabInstance:
         type: 3}
       propertyPath: rb
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 184107241}
+    - target: {fileID: 1075524753257954245, guid: b2173146ca2718b41b0aee1efcde1a3d,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 184107239}
     - target: {fileID: 5513955732614169816, guid: b2173146ca2718b41b0aee1efcde1a3d,
         type: 3}
       propertyPath: m_Name
@@ -900,6 +909,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2060381107 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1075524753257954245, guid: b2173146ca2718b41b0aee1efcde1a3d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1574119384}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a242f6d865172d4396294ec9a00f88f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2074207727
 GameObject:
   m_ObjectHideFlags: 0
