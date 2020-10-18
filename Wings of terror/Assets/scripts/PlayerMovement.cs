@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Keybinds : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     private Vector2 targetPos;
-    public float Yincrement;
-    public float Xincrement;
+    private float Xincrement = 0.04f;
     public float jumpSpeed;
-    public float speed;
+    public float maxLeft;
+    public float maxRight;
 
     public Rigidbody2D RB;
-
+    public Collider2D CC;
     public void start()
     {
 
@@ -24,12 +25,12 @@ public class Keybinds : MonoBehaviour
         {
             RB.AddForce(Vector3.up * jumpSpeed, ForceMode2D.Impulse);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && transform.position.x > maxLeft)
         {
             targetPos = new Vector2(transform.position.x - Xincrement, transform.position.y);
             transform.position = targetPos;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && transform.position.x < maxRight)
         {
             targetPos = new Vector2(transform.position.x + Xincrement, transform.position.y);
             transform.position = targetPos;
