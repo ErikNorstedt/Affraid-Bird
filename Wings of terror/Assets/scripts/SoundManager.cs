@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
 
-    public Sound[] sounds;
+   /* public Sound[] sounds;
 
     public static SoundManager instance;
     // Start is called before the first frame update
@@ -44,5 +44,5 @@ public class SoundManager : MonoBehaviour
         {
             Debug.LogWarning("Sounds; " + name + "not found!");
         }
-    }
+    }*/
 }
