@@ -7,7 +7,7 @@ public class LinearTimer : MonoBehaviour
 {
     Image timerbar;
     public float maxTime = 30f;
-    float timeLeft;
+    public float timeLeft;
     public Rigidbody2D rb;
     public float heightOfActivation;
     public GameObject player;
@@ -29,6 +29,7 @@ public class LinearTimer : MonoBehaviour
             
             if (timeLeft == 0)
             {
+                
                 // Disable flight
             } else if (timeLeft > 30)
             {
