@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnSharks : MonoBehaviour
+public class SapwnShark : MonoBehaviour
 {
     [SerializeField]
     private GameObject Shark;
