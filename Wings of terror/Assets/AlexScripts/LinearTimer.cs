@@ -11,8 +11,11 @@ public class LinearTimer : MonoBehaviour
     public Rigidbody2D rb;
     public float heightOfActivation;
     public GameObject player;
-    
-  
+
+    public float faster;
+    public float slower;
+
+
     void Start()
     {
         timerbar = GetComponent<Image>();
@@ -32,7 +35,7 @@ public class LinearTimer : MonoBehaviour
         {
             
 
-            timeLeft -= Time.deltaTime;
+            timeLeft -= Time.deltaTime * faster;
             timerbar.fillAmount = timeLeft / maxTime;
             
             if (timeLeft == 0)
@@ -46,7 +49,7 @@ public class LinearTimer : MonoBehaviour
         }
         else
         {
-            timeLeft += Time.deltaTime;
+            timeLeft += Time.deltaTime * slower;
             timerbar.fillAmount = timeLeft / maxTime;
         }
     }

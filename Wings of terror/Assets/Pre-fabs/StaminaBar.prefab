@@ -190,8 +190,10 @@ MonoBehaviour:
   maxTime: 30
   timeLeft: 0
   rb: {fileID: 0}
-  heightOfActivation: 1
+  heightOfActivation: 1.5
   player: {fileID: 0}
+  faster: 2.5
+  slower: 1.5
 --- !u!1 &1075524754356956664
 GameObject:
   m_ObjectHideFlags: 0
