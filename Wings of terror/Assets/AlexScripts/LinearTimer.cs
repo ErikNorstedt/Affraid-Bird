@@ -17,13 +17,21 @@ public class LinearTimer : MonoBehaviour
     {
         timerbar = GetComponent<Image>();
         timeLeft = maxTime;
+
+        player.GetComponentInChildren<SpriteRenderer>().enabled = true;
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+
         if (rb.position.y > heightOfActivation)
         {
+            
+
             timeLeft -= Time.deltaTime;
             timerbar.fillAmount = timeLeft / maxTime;
             
