@@ -13,27 +13,43 @@ public class PlayerMovement : MonoBehaviour
     public float maxLeft;
     public float maxRight;
 
+    public LinearTimer Linearref;
+    
     public Rigidbody2D RB;
     public Collider2D CC;
+    public bool lockvar;
+    private float locking;
+
     public void start()
     {
 
     }
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        locking = Linearref.timeLeft;
+        
+        if (locking == 0)
         {
-            RB.AddForce(Vector3.up * jumpSpeed, ForceMode2D.Impulse);
+            lockvar = true;
         }
-        if (Input.GetKey(KeyCode.A) && transform.position.x > maxLeft)
+        else if (locking > 0)
         {
-            targetPos = new Vector2(transform.position.x - Xincrement, transform.position.y);
-            transform.position = targetPos;
-        }
-        if (Input.GetKey(KeyCode.D) && transform.position.x < maxRight)
-        {
-            targetPos = new Vector2(transform.position.x + Xincrement, transform.position.y);
-            transform.position = targetPos;
+            lockvar = false;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                RB.AddForce(Vector3.up * jumpSpeed, ForceMode2D.Impulse);
+            }
+            if (Input.GetKey(KeyCode.A) && transform.position.x > maxLeft)
+            {
+                targetPos = new Vector2(transform.position.x - Xincrement, transform.position.y);
+                transform.position = targetPos;
+            }
+            if (Input.GetKey(KeyCode.D) && transform.position.x < maxRight)
+            {
+                targetPos = new Vector2(transform.position.x + Xincrement, transform.position.y);
+                transform.position = targetPos;
+            }
         }
     }
 }
