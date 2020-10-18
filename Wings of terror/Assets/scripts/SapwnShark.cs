@@ -15,6 +15,8 @@ public class SapwnShark : MonoBehaviour
     public float decreaceTime;
     public float minTime = 0.65f;
 
+    
+
 
   
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class SapwnShark : MonoBehaviour
             minrange -= decreaceTime;
             maxrange -= decreaceTime;
             }
+            AudioManager.instance.PlaySound("Ooo");
         }
         else
         {
