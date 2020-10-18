@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 7408251140945427147}
   - component: {fileID: 7408251140945427146}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: LinearSeagul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
