@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7802884351177446928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7802884351177446934}
+  - component: {fileID: 7802884351177446929}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7802884351177446934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7802884351177446928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7802884351177446929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7802884351177446928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 879979bc1b9863e4ab290e3373d9adea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: AwwShit
+    clip: {fileID: 8300000, guid: fbd8e2798a98d0b40b9d93d2f8e4b45b, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BigHorn
+    clip: {fileID: 8300000, guid: 9a6b509812147c74d92fddfb8d726f16, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: ButtonClick
+    clip: {fileID: 8300000, guid: b9fda1dc15ebd1f46bbec8aa7b9cecdc, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: ButtonHover
+    clip: {fileID: 8300000, guid: 09161fc5c55725f4cb2cd02cfeaca0df, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Failed
+    clip: {fileID: 8300000, guid: 7ea81ce25a852fa44ac7c3c25b7b7c8d, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Flap1
+    clip: {fileID: 8300000, guid: c3466c34d360a5341869f867c9f99aad, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Flap2
+    clip: {fileID: 8300000, guid: 0fa66f90f68d15147a2582f88735c1fb, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: FramesOfShark
+    clip: {fileID: 8300000, guid: 89e282113305bde4692afb400bc485ae, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Ooo
+    clip: {fileID: 8300000, guid: 5a67f27e12e6d5048a2df720d2125918, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Screech
+    clip: {fileID: 8300000, guid: fe0161020a69ac84c813ef1c636ccf86, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: SmallHorn
+    clip: {fileID: 8300000, guid: 9d03158bb18e6f642a214ef6862c2514, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Splash
+    clip: {fileID: 8300000, guid: e9eb927cef34575439279ffffdea43b2, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.99
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  playlist:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 1d3b2efcbdce6bb479070e4a28be4b58, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1.04
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Menu
+    clip: {fileID: 8300000, guid: 59dc19c7823442845abbed6b9524f46a, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1.04
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Stress
+    clip: {fileID: 8300000, guid: 0654e430b422dff4e95931a91a9c26e3, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1.04
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
