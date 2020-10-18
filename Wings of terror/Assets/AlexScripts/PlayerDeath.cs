@@ -12,7 +12,7 @@ public class PlayerDeath : MonoBehaviour
     {
         if (collision.gameObject.tag == "enemy")
         {
-            Time.timeScale = 0;
+            
             SceneManager.LoadScene(DeathSceneIndex);
         }
     }
@@ -20,7 +20,7 @@ public class PlayerDeath : MonoBehaviour
     {
         if (collision.gameObject.tag == "enemy")
         {
-            Time.timeScale = 0;
+            
             SceneManager.LoadScene(DeathSceneIndex);
         }
     }
